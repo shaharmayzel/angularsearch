@@ -9,7 +9,6 @@ import { PeopleListComponent } from './components/people-list/people-list.compon
 import { Routes, RouterModule } from '@angular/router';
 import { PeopleCardComponent } from './components/people-card/people-card.component'; // CLI imports router
 import { AppComponent } from './components/app/app.component';
-import { NgHttpLoaderModule } from 'ng-http-loader';
 const routes: Routes = [
   { path: 'people', component: PeopleListComponent },
   { path: 'people/:name', component: PeopleCardComponent },
@@ -28,7 +27,6 @@ const routes: Routes = [
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NgHttpLoaderModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true },
