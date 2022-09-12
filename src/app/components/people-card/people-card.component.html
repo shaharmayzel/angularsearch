@@ -1,0 +1,16 @@
+<div class="center-box">
+    <div class="card-box" *ngFor="let n of currentPerson | async">
+        <div class="max-width center-box">
+            <div class='card-main-text'>Hi, I'm {{ n.name}}!</div>
+            <img src="https://robohash.org/{{n.name}}" width="200px">
+        </div>
+        <div class="max-width  card-text">
+            <div>Height: {{n.height}}</div>
+            <div>Gender: {{n.gender}}</div>
+            <div>Hair Color: {{n.hair_color}}</div>
+            <div>Eye Color: {{n.eye_color}}</div>
+            <div>Birth Year: {{n.birth_year}}</div>
+        </div>
+
+    </div>
+</div>

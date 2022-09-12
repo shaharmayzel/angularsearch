@@ -1,0 +1,30 @@
+.card-box {
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-box child {
+    width: 50%;
+}
+
+.card-text {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text div {
+    margin-bottom: 10px;
+}
+
+.card-main-text {
+    font-size: 20px;
+}

@@ -1,0 +1,74 @@
+.people-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    row-gap: 100px;
+    column-gap: 50px;
+}
+
+.card-title {
+    color: black;
+}
+
+.person-card {
+    width: 200px;
+    text-align: center;
+    background-color: rgb(199 218 240);
+    border-radius: 10px;
+    padding: 10px;
+    height: 150px;
+}
+
+.person-card:hover {
+    background-color: rgb(179, 197, 228);
+    cursor: pointer;
+}
+
+.main-text {
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+.field {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 240px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-radius: 48px;
+    background: #fff;
+}
+
+.field .input {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    outline: none;
+    border: none;
+    background: transparent;
+    transition: all ease 0.25s;
+}
+
+.field .input:placeholder-shown~.eraser {
+    opacity: 0;
+    transform: rotate(360deg);
+}
+
+.field .input:read-only {
+    color: #888;
+}
+
+.field .pencil-icon .pencil {
+    transform-origin: 0% 100%;
+}
+
+.field .eraser {
+    cursor: pointer;
+    color: #aaa;
+    transition: all ease 0.25s;
+}
